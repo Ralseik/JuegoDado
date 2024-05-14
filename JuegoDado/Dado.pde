@@ -1,5 +1,5 @@
 class Dado extends GameObject {
-
+private int indice;
   private int[] valor;
   
   public  Dado(){
@@ -10,9 +10,10 @@ class Dado extends GameObject {
   
  public void display(){
     int dado = 0;
-    for(int i=0; i < valor.length; i++){
-     valor[i] = (int)random(1,7);
-     
+    indice = (int) random(indice.length);
+  while(dado < valor.length){
+     valor[dado] = (int)random(1,7);
+     dado++;
     }
     
   }
@@ -21,8 +22,17 @@ class Dado extends GameObject {
     this.posicion.set(posicionx,posiciony);
   }
   
-public int[]  getValor(){
+public int[]  getValorArial(){
     return valor;
+  }
+  
+  public int getIndice(){
+    return imagen;
+
+  }
+  
+  public void setIndice(int indice) {
+    this.indice = indice;
   }
   
 }

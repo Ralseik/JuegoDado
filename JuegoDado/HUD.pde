@@ -1,11 +1,13 @@
 class HUD {
   Dado dado;
-void mostrarValor(Dado dado){
-  this.dado = dado;
-}
+  public HUD(Dado dado){
+    this.dado = dado;
+  }
+
 
 void display(){
   textSize(70);
- 
+ text("presiona a",width/2, height);
+ fill(0);
 }
 }
