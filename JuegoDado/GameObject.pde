@@ -4,5 +4,6 @@ public  GameObject(int posx, int posy){
     posicion = new PVector(posx,posy);
   }
   
-   
+ public void  display(){
+ }
 }
