@@ -1,38 +1,11 @@
-class Dado extends GameObject {
-private int indice;
-  private int[] valor;
-  
-  public  Dado(){
-  valor = new int [6];
-  
+class Dado extends GameObject{
+  Dado(int x, int y){
+  super(x,y);
   }
   
-  
- public void display(){
-    int dado = 0;
-    indice = (int) random(indice.length);
-  while(dado < valor.length){
-     valor[dado] = (int)random(1,7);
-     dado++;
-    }
-    
+void display(){
+  rectMode(CENTER);
+  fill(#FF3636);
+    rect(posicion.x,posicion.y,100,100);
   }
-  
- public void Posicion(int posicionx, int posiciony){
-    this.posicion.set(posicionx,posiciony);
-  }
-  
-public int[]  getValorArial(){
-    return valor;
-  }
-  
-  public int getIndice(){
-    return imagen;
-
-  }
-  
-  public void setIndice(int indice) {
-    this.indice = indice;
-  }
-  
 }

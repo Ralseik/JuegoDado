@@ -1,13 +1,8 @@
-abstract  class GameObject {
- 
-  protected PVector posicion;
-  
-  public GameObject(){
-    posicion = new PVector(0,0);
+class GameObject {
+  PVector posicion;
+public  GameObject(int posx, int posy){
+    posicion = new PVector(posx,posy);
   }
- 
   
- public void display(){
-    
-  }
+   
 }
