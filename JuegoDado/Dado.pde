@@ -1,17 +1,28 @@
-class Dado {
+class Dado extends GameObject {
 
-  private int valor;
+  private int[] valor;
   
-  display(){
+  public  Dado(){
+  valor = new int [6];
+  
+  }
+  
+  
+ public void display(){
+    int dado = 0;
+    for(int i=0; i < valor.length; i++){
+     valor[i] = (int)random(1,7);
+     
+    }
     
   }
   
-  posicion(){
-    
+ public void Posicion(int posicionx, int posiciony){
+    this.posicion.set(posicionx,posiciony);
   }
   
-  getValor(){
-    
+public int[]  getValor(){
+    return valor;
   }
   
 }

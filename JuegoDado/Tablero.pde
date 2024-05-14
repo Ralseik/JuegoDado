@@ -1,5 +1,9 @@
-class Tablero {
+class Tablero extends GameObject {
  
-  display(){
+ 
+  public void Tablero(PVector posicion){
+    this.posicion = posicion;
+  }
+void  display(){
   }
 }

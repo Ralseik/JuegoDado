@@ -1,7 +1,11 @@
 class HUD {
-mostrarValor(Dado dado){
+  Dado dado;
+void mostrarValor(Dado dado){
+  this.dado = dado;
 }
 
-display(){
+void display(){
+  textSize(70);
+ 
 }
 }
