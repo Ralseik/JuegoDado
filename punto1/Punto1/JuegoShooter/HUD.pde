@@ -10,5 +10,8 @@ class HUD {
     }
     
     public void display() {
+       fill(255);
+        textSize(20);
+        text("Vidas: " + vidas, 20, 20);
     }
 }
