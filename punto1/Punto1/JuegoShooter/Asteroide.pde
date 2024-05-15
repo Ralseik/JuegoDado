@@ -5,7 +5,7 @@ class Asteroide extends GameObject {
    }
    public void display() {
      imageMode(CENTER);
-       image(image, position.x,position.y,60,20);
+     image(image, position.x,position.y,60,60);
     
     }
 }
